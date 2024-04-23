@@ -17,7 +17,7 @@ const PasswordValidator = () => {
   const [showErr, toggleErr] = useState(true)
 
   const validatePassword = event => {
-    newPassword(even.target.value)
+    newPassword(event.target.value)
     if (event.target.value.length >= 8) {
       toggleErr(false)
     } else {
